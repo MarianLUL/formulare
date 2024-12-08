@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka na Zlomky</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header><h1 class="text-center text-white bg-primary py-5">Kalkulačka na Zlomky</h1></header>
+    <div class="container mt-5">
+        
+        <form id="fractionCalculatorForm">
+            <div class="row mb-3">
+                <div class="col-12 col-md-6">
+                    <label for="numerator1" class="form-label">Čitatel 1</label>
+                    <input type="number" class="form-control" id="numerator1" placeholder="Zadejte čitatel">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="denominator1" class="form-label">Jmenovatel 1</label>
+                    <input type="number" class="form-control" id="denominator1" placeholder="Zadejte jmenovatel">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 col-md-6">
+                    <label for="numerator2" class="form-label">Čitatel 2</label>
+                    <input type="number" class="form-control" id="numerator2" placeholder="Zadejte čitatel">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="denominator2" class="form-label">Jmenovatel 2</label>
+                    <input type="number" class="form-control" id="denominator2" placeholder="Zadejte jmenovatel">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <label for="operation" class="form-label">Vyberte Operaci</label>
+                    <select class="form-select" id="operation">
+                        <option value="add">Sčítání</option>
+                        <option value="subtract">Odčítání</option>
+                        <option value="multiply">Násobení</option>
+                        <option value="divide">Dělení</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Vypočítat</button>
+        </form>
+        <main id="result" class="container"></main>
+    </div>
+
+    <div class="container text-center"> 
+        <img src="img/Opera Snímek_2024-12-07_002122_copilot.microsoft.com.png" alt="Zlomky"> 
+    </div>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        
+        <p>2024 - Marian Škurhan, IT2</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
